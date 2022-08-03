@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400&family=Source+Serif+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:wght@300;500&family=Roboto:wght@100;400&family=Source+Serif+Pro:wght@400;600&display=swap');
 
 :root{
     --blue:#005274;
@@ -46,7 +46,7 @@ ul>li a{
 
 nav>ul li{
     font-size: .875rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 nav svg{
@@ -90,7 +90,6 @@ nav svg{
 
 .col-md-4 > a{
     color:white;
-    font-size: 24px;
     text-decoration: none;
     font-weight: 400;
 }
@@ -118,16 +117,15 @@ nav svg{
     font-family: 'Source Serif Pro', serif;
     font-size:2.2rem;
     padding:0 10px 10px 10px;
-    line-height: 1.15em;
+    line-height: 1.35em;
 }
 
 form{
     background-color: white;
     margin:5px;
     position: relative;
-    width:700px;
-    height:48px;
     margin:5px auto;
+    width:97%;
 }
 
 form input[type="search"]{
@@ -138,6 +136,7 @@ form input[type="search"]{
     font-size:17px;
     font-weight: light 300;
     border:none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button{
@@ -145,7 +144,7 @@ button{
     right: 0px;
     top: 0px;
     width: 56px;
-    height: 50px;
+    height: 47px;
     padding:5px 0 7px 0;
     background-color: #a43033;
     border-radius: 0;
@@ -167,7 +166,6 @@ button>i{
 .advanced-text{
     text-align:right;
     padding-right:10px;
-    font-size: 1.1rem;
     word-wrap: normal;
     font-family: Open Sans,icomoon,sans-serif;
 }
@@ -397,7 +395,7 @@ footer ul>li{
 
 /** ---------------RESPONSIVE DESIGN ----------------**/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 774px) {
     .container{
         width:100%;
     }
@@ -424,8 +422,12 @@ footer ul>li{
         background-size: cover;
     }
 
+    form{
+        width:96%;
+    }
+
     form input[type="search"]{
-        font-size: smaller;
+        font-size: 14px;
     }
 
     button{
@@ -539,21 +541,100 @@ footer ul>li{
     
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
+
+@media only screen and (min-width: 774px){
+    .container{
+        width:90%;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .logo>img{
+        width:190px;
+        padding-top:5px;
+    }
+
+    .search{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form input[type="search"]{
+        font-size: 16px;
+    }
+
+    button{
+        height:46px;
+    }
+
+    .intro-text1{
+        font-size:.8198rem;
+    }
+
+    .intro-text2{
+        font-size:1.8rem;
+    }
+
+    .advanced-text{
+        font-size: 0.89em;
+    }
+
+    .col-md-4 > a{
+        font-size: 20px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width:1120px){
+    .container{
+        width:1080px;
+        margin:0 auto;
+    }
+
+    .logo{
+        width:40%;
+        padding-top: 5px;
+    }
+
+    .logo>img{
+        width:210px;
+    }
+    
     .search-bar{
         width:67%;
         margin:0 auto;
     }
 
-    /* form{
-        width:700px;
+    form{
         height:48px;
-        margin:5px auto;
-    } */
+    }
+
+    form input[type="search"]{
+        font-size: 17px;
+    }
+
+    button{
+        height:47px;
+    }
+
+    .intro-text1{
+        font-size:1.25rem;
+        font-weight: 400;
+        margin-top:10px;
+    }
+
+    .intro-text2{
+        font-size:2.2rem;
+        line-height: 1.45em;
+    }
+
+    .advanced-text{
+        font-size: 1.1rem;
+    }
+
+    .col-md-4 > a{
+        font-size: 24px;
+    }
 }
